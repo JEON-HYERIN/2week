@@ -5,6 +5,9 @@
 .column_right {
   width: 350px;
   float: right;
+  position: sticky;
+  right: 0;
+  top: 0;
 }
 /* sc-news */
 .sc-news {margin-top: 12px;}
