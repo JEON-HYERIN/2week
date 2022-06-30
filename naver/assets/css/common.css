@@ -96,7 +96,8 @@ a:hover {
 .ico-play,
 .ico-btn,
 .ico-more,
-.sc-themepost .theme-title a.title::after {
+.sc-themepost .theme-title a.title::after,
+.footer .notice-area .link-all::after {
   background-image: url("../images/sp-bg.png");
   background-size: 457px;
   background-repeat: no-repeat;
