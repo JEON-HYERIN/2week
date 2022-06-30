@@ -336,25 +336,13 @@
   top: 6px;
   z-index: 10;
 }
-.sc-themepost .theme-btn.prev {
+.sc-themepost .theme-btn.btn-prev {
   left: -23px;
 }
-.sc-themepost .theme-btn.next {
+.sc-themepost .theme-btn.btn-next {
   right: -18px
 }
-.sc-themepost .theme-btn::before {
-  content: '';
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  vertical-align: top;
-}
-.sc-themepost .theme-btn.prev::before {
-  background-position: -128px -345px;
-}
-.sc-themepost .theme-btn.next::before {
-  background-position: -86px -345px;
-}
+
 .sc-themepost .category-list {
   font-size: 0;
   line-height: 0;
@@ -473,7 +461,8 @@
   font-weight: 700;
 }
 .sc-themepost .topstory-info .theme-category,
-.sc-themepost .theme-info .theme-category {
+.sc-themepost .theme-info .theme-category,
+.sc-themepost .theme-hl {
   color: #ebaa00;
 }
 .sc-themepost .topstory-info .title {
@@ -599,13 +588,157 @@
 .sc-themepost .media-view {
   padding: 18px 0 17px;
   margin: 0 -27px -31px 0;
+  font-size: 0;
+  line-height: 0;
 }
-.sc-themepost .media-view .media-area {}
-.sc-themepost .media-view .media-thumb {}
-.sc-themepost .media-view .media-info {}
-.sc-themepost .media-view .info-box {}
-.sc-themepost .media-view .info-box .title {}
-.sc-themepost .media-view .source-wrap {}
+.sc-themepost .media-view .media-area {
+  margin: 0 27px 31px 0;
+  display: inline-block;
+  width: 232px;
+  font-size: 12px;
+  line-height: 20px;
+  vertical-align: top;
+  text-decoration: none;
+}
+.sc-themepost .media-view .media-thumb {
+  width: 232px;
+  height: 130px;
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+.sc-themepost .media-view .ico-play {}
+.sc-themepost .media-view .thumb-runtime {}
+.sc-themepost .media-view .media-info {
+  padding-top: 12px;
+}
+.sc-themepost .media-view .info-box {
+  overflow: hidden;
+}
+.sc-themepost .media-view .title {
+  display: -webkit-box;
+  overflow: hidden;
+  max-height: 40px;
+  line-height: 20px;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 13px;
+}
+.sc-themepost .media-view .media-area:hover .title {
+  text-decoration: underline;
+}
+.sc-themepost .media-view .source-wrap {
+  display: inline-block;
+  max-width: 100%;
+  margin-top: 3px;
+  vertical-align: top;
+}
+
+.sc-themepost .media-view .date,
+.sc-themepost .media-view .desc {
+  float: right;
+  color: grey;
+}
+
+.sc-themepost .media-view .date::before,
+.sc-themepost .media-view .desc::before {
+  background-color: grey;
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  vertical-align: top;
+  content: '';
+  margin: 0 5px;
+  vertical-align: 3px;
+}
+
+.sc-themepost .media-view .source {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  color: #505050;
+}
+
+.sc-themepost .theme-title {
+  padding-top: 24px;
+  line-height: 25px;
+}
+.sc-themepost .theme-title::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.sc-themepost .theme-title .title {
+  float: left;
+  font-size: 14px;
+  color: #000;
+}
+.sc-themepost .theme-title a.title {
+  position: relative;
+    font-weight: 700;
+}
+.sc-themepost .theme-title a.title::after {
+  display: inline-block;
+  width: 7px;
+  height: 11px;
+  background-position: -444px -304px;
+  content: '';
+  margin-left: 6px;
+  vertical-align: 0;
+}
+.sc-themepost .media-view-wrap {
+  position: relative;
+}
+.sc-themepost .media-view-wrap .btn {
+  position: absolute;
+  top: 66px;
+  z-index: 10;
+}
+.sc-themepost .media-view-wrap .btn-prev {
+  left: -22px;
+}
+.sc-themepost .media-view-wrap .btn-next {
+  right: -13px;
+}
+.sc-themepost .theme-badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  background-color: #ebaa00;
+}
+.sc-themepost .theme-badge .badge-inner {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  height: 30px;
+  padding: 0 10px;
+  font-size: 12px;
+  line-height: 30px;
+  color: #fff;
+}
+.sc-themepost .btn-more-wrap {
+  position: relative;
+  padding-top: 18px;
+  margin-bottom: 42px;
+  border-bottom: 1px solid #e4e8eb;
+}
+.sc-themepost .btn-more-wrap .btn-more {
+  position: absolute;
+  top: 0;
+  left: 334px;
+  color: #505050;
+  cursor: pointer;
+}
+.sc-themepost .btn-more .ico-more {
+  display: block;
+  margin: 0 auto 3px;
+}
 
 /* 상품영역 구성 */
 .sc-shop {
@@ -1018,6 +1151,7 @@
 
 .sc-shop .deal-list .thumb-box > img {
   border-radius: inherit;
+  min-height: 60px;
 }
 
 .sc-shop .deal-list .ico-one-plus {
