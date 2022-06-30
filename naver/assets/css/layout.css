@@ -1,0 +1,148 @@
+@import './reset.css';
+@import './common.css';
+
+.header {}
+.header .logo-area {
+  border-bottom: 1px solid #e4e8eb;
+}
+.header .logo-area .common-inner {
+  position: relative;
+  height: 160px;
+}
+.header .logo {
+  position: absolute;
+  top: 50%;
+  left: -9px;
+  margin-top: -32px;
+}
+
+.header .logo a {
+  display: block;
+}
+.header .logo a::before {
+  content: '';
+  display: block;
+  width: 222px;
+  height: 52px;
+  background-position: 0 -158px;
+}
+.header .logo a::after {}
+
+.header .search-area {
+  position: absolute;
+  top: 50%;
+  left: 238px;
+  margin-top: -28px;
+}
+
+.header .search-area .inner {
+  position: relative;
+  width: 582px;
+  height: 52px;
+  border: 2px solid #19ce60;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.header .search-area .input-search {
+  width: 444px;
+  height: 24px;
+  padding: 13px 15px;
+  margin: 1px;
+  background-color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  font-weight: 700;
+  outline: 0;
+}
+.header .search-area .btn-search {
+  width: 56px;
+  height: 56px;
+  background: #19ce60;
+  position: absolute;
+  right: 0;
+  top: -2px;
+}
+.header .search-area .btn-search::before {
+  content: '';
+  display: inline-block;
+  vertical-align: top;
+  width: 22px;
+  height: 22px;
+  background-position: -420px 0;
+}
+
+.header .service-area {
+  position: absolute;
+  top: 12px;
+  right: 27px;
+}
+
+.header .service-area .link-start {
+  float: left;
+  font-size: 11px;
+}
+.header .service-area .link-start::after {
+  content: '';
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  vertical-align: top;
+  margin: -3px 0 0 3px;
+  background-position: -308px -345px;
+}
+.header .service-area .link-junior {float: left;}
+.header .service-area .link-bin {float: left;}
+.header .service-area .bar {
+  float: left;
+  width: 1px;
+  height: 10px;
+  margin: 3px 7px;
+  background: #ccc;
+}
+
+.header .gnb-area {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
+}
+
+.header .gnb-area .common-inner {}
+.header .gnb-area .common-inner::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.header .gnb {
+  float: left;
+  padding: 11px 0;
+  line-height: 30px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.header .gnb-list {
+  
+}
+.header .gnb-item {
+  float: left;
+  color: #19ce60;
+}
+.header .gnb-item + .gnb-item {
+  margin-left: 12px; 
+}
+.header .weather-area {
+  float: right;
+}
+
+.container {
+  width: 1130px;
+  margin: 0 auto;
+  padding: 20px 30px;
+}
+.container::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.footer {}
